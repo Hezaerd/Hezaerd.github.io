@@ -1,7 +1,237 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+<!-- Protfolio page-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Swann Portfolio</title>
+
+        <!-- Linking CSS -->
+        <link rel="stylesheet" href="style.css">
+        
+        <!-- Bootsrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Font Awesome -->
+        <!-- <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script> -->
+        <script src="https://kit.fontawesome.com/500dc6e970.js" crossorigin="anonymous"></script>
+
+    </head>
+
+    <body>
+        
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll">
+            <div class="container">
+                <a class="navbar-brand" href="#home">Swann</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Banner -->
+        <section class="bpimage" id="home">
+            <div class="container-fluid">
+                <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+                    <h2 class="hero_title">Hey, it's me Swann</h2>
+                    <p class="hero_desc">I am a student in game programming</p>
+                </div>            
+                </div>
+            </div>
+        </section>
+
+    <!-- about section-->
+    <section id="about">
+        <div class="container mt-4 pt-4">
+            <h1 class="text-center">About Me</h1>
+            <div class="row mt-4">
+                <div class="col-lg-4">
+                    <img src="images/about.jpeg" class= "imageAboutPage" alt="">
+                </div>
+
+                <div class="col-lg-8">
+                    <p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged
+                        
+                    </p>
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Name: Swann Rouanet</li>
+                                <li>Age: 17</li>
+                                <li>Occupation: Game programming Student</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+     <!-- portfolio section-->
+     <section id="portfolio">
+        <div class="container mt-3">
+            <h1 class="text-center">Portfolio</h1>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/project-Coloris.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Coloris</h4>
+                            <p class="card-text">A Game Jam project with 3 artistes and 2 game designer in one week at my school.</p>
+                            <div class="text-center">
+                                <a href="https://github.com/Hezaerd/Coloris" class="btn btn-dark">Link
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/project-portalgl.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Portal Clone</h4>
+                            <p class="card-text">Develop a primitive version of Portal including a game editor and a small map in OpenGL Modern. </p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-dark">Link
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/project-modernopengl.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Modern OpenGL</h4>
+                            <p class="card-text">Develop a basic 3D rendering engine in OpenGL 3 or higher.</p>
+                            <div class="text-center">
+                                <a href="https://github.com/Hezaerd/Model-OpenGL" class="btn btn-dark">Link
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/project-3C.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">3C Project</h4>
+                            <p class="card-text">A team project of a paper airplane racing game prototype.</p>
+                            <div class="text-center">
+                                <a href="https://github.com/Hezaerd/PaperSheet-3c-project" class="btn btn-dark">Link
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/project-libmaths.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Custom Maths Library</h4>
+                            <p class="card-text">My own math library for graphic content (just like glm).</p>
+                            <div class="text-center">
+                                <a href="https://github.com/Hezaerd/Lib-Maths" class="btn btn-dark">Link
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/project-github-profile.png" alt="Github Profile image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Github Profile</h4>
+                            <p class="card-text">Just a super cool looking Github profile using some html :)</p>
+                            <div class="text-center">
+                                <a href="https://github.com/Hezaerd" class="btn btn-dark">Link
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- contact section-->
+    <section id="contact">
+        <div class="container mt-3 contactContent">
+            <h1 class="text-center">Contact Me</h1>
+
+            <div class="row mt-4">
+                    <!-- form fields -->
+                    <form>
+                        <input type="text" class="form-control form-control-lg" placeholder="Name">
+                        <input type="email" class="form-control mt-3" placeholder="Email">
+                        <input type="text" class="form-control mt-3" placeholder="Subject">
+                        <div class="mb-3 mt-3">
+                            <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
+                        </div>
+                    </form>
+                    <button type="button" class="btn btn-dark mt-3">Contact Me</button>
+                    
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section-->
+    <footer id="footer">
+        <div class="container-fluid">
+            <!-- social media icons -->
+            <div class="social-icons mt-4">
+                <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/swann-rouanet-7aa979239/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Load scripts after all htlm content -->
+    <script src="script/scritp.js"></script>
+
+    </body>
+    
 </html>
