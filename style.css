@@ -1,7 +1,9 @@
+/* Navbar Background color while scrolling styling */
 .navbarScroll.navbarDark {
     background-color: black;
 }
 
+/* Hero image styling */
 .bpimage {
     height: 100vh;
     background: url('images/kristopher-roller.jpg');
@@ -9,6 +11,7 @@
     position:relative;
 }
 
+/* Hero text styling */
 .hero_title {
     font-size: 4.5rem;
 }
@@ -24,12 +27,9 @@
     color: white;
 }
 
+/* About image styling */
 .imageAboutPage {
     width: 100%;
-}
-
-.buttom {
-    background-color: #3e528d;
 }
 
 /* social media icons styling */
@@ -37,12 +37,13 @@
     font-size: 36px;
     cursor: pointer;
 }
-.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover {
-    color: #3e528d;
-}
-.fab {
+.fab, .fas {
     color: white;
 }
+.fa-envelope:hover, .fa-twitter:hover,.fa-linkedin:hover {
+    color: #3e528d;
+}
+
 /* footer styling */
 #footer {
     background-color: black;
