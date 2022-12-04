@@ -20,6 +20,7 @@
     background-size:cover;
     position:relative;
 }
+
 /* Hero text */
 .hero-text {
     text-align: center;
@@ -29,14 +30,17 @@
     transform: translate(-50%, -50%);
     color: white;
 }
+
 /* Hero title */
 .hero_title {
     font-size: 4.5rem;
 }
+
 /* Hero subtitle */
 .hero_desc {
     font-size: 2rem;
 }
+
 /* Hero title "typewriter" animation */
 .typewriter h2 {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -73,13 +77,18 @@
 /* Cards                        */
 /* **************************** */
 
+/* Cards */
+.card {
+    perspective: 1000px;
+    transition: all 0.25s ease;
+}
+
 /* Cards Hover */
 .cardHover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     transform: scale(1.025);
     transition: 0.3s;
 }
-
 
 
 
