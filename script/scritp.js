@@ -3,7 +3,7 @@ const header = document.querySelector('.navbar');
 console.log(header)
 window.onscroll = function() {
     const top = window.scrollY;
-    if(top >=720) {
+    if(top >=1) {
         header.classList.add('navbarDark');
     }
     else {
@@ -17,4 +17,17 @@ const menuToggle = document.getElementById('navbarSupportedContent')
 
 navLinks.forEach((l) => {
     l.addEventListener('click', () => { new bootstrap.Collapse(menuToggle).toggle() })
+})
+
+
+// When hover a card extand the card and snap the title to the left
+const cards = document.querySelectorAll('.card')
+
+cards.forEach((card) => {
+    card.addEventListener('mouseover', () => {
+        card.classList.add('cardHover')
+    })
+    card.addEventListener('mouseout', () => {
+        card.classList.remove('cardHover')
+    })
 })
