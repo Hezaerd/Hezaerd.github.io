@@ -86,9 +86,41 @@
 /* Cards Hover */
 .cardHover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    transform: scale(1.025);
+    transform: scale(1.05);
     transition: 0.3s;
 }
+
+/* Cards Gray */
+.cardGray {
+    filter: grayscale(100%);
+    opacity: 0.85;
+    transition: 0.3s;
+}
+
+.card-flip > div {
+    backface-visibility: hidden;
+    transition: transform 300ms;
+    transition-timing-function: linear;
+}
+
+.card-front {
+    transform: rotateY(0deg);
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+}
+
+.card-flip:hover .card-front {
+    transform: rotateY(-180deg);
+}
+
+.card-flip:hover .card-back {
+    transform: rotateY(0deg);
+}
+
 
 
 
@@ -112,5 +144,5 @@
 }
 
 .footerhover:hover {
-    color: #3e528d;
+    color: rgb(23, 23, 23);
 }	

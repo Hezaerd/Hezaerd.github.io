@@ -26,8 +26,20 @@ const cards = document.querySelectorAll('.card')
 cards.forEach((card) => {
     card.addEventListener('mouseover', () => {
         card.classList.add('cardHover')
+        // Gray out the other cards
+        cards.forEach((otherCards) => {
+            if(otherCards !== card) {
+                otherCards.classList.add('cardGray')
+            }
+        })
     })
     card.addEventListener('mouseout', () => {
         card.classList.remove('cardHover')
+        // Remove gray out from the other cards
+        cards.forEach((otherCards) => {
+            if(otherCards !== card) {
+                otherCards.classList.remove('cardGray')
+            }
+        })
     })
 })
