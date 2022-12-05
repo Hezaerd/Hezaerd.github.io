@@ -14,12 +14,12 @@
 /* **************************** */
 
 /* Hero image */
-.bpimage {
+/* .bpimage {
     height: 100vh;
     background: url('../images/adrien-olichon-blacksoil.jpg');
     background-size:cover;
     position:relative;
-}
+} */
 
 /* Hero text */
 .hero-text {
