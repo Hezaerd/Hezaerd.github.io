@@ -72,14 +72,14 @@
 /* Cards Hover */
 .cardHover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    transform: scale(1.05);
+    transform: scale(1.08);
     transition: 0.3s;
 }
 
 /* Cards Gray */
 .cardGray {
     filter: grayscale(100%);
-    opacity: 0.85;
+    opacity: 0.75;
     transition: 0.3s;
 }
 
@@ -115,12 +115,13 @@
 
 #footer {
     background-color: black;
+    height: 36px;
     text-align: center;
 }
 
 /* social media icons styling */
 .social-icons {
-    font-size: 36px;
+    font-size: 20px;
     cursor: pointer;
 }
 
